@@ -5,17 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/login/login.component';
-import { InitPageComponent } from './Components/init-page/init-page.component';
-import { InicioComponent } from './Components/inicio/inicio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateUserComponent } from './Components/create-user/create-user.component';
+import { SetAdressComponent } from './Components/set-adress/set-adress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    InitPageComponent,
-    InicioComponent
+    CreateUserComponent,
+    SetAdressComponent
   ],
   imports: [
     BrowserModule,

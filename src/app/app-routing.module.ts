@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './Components/login/login.component';
-import { InitPageComponent } from './Components/init-page/init-page.component';
-import { AuthGuard } from './auth.guard';
-import { InicioComponent } from './Components/inicio/inicio.component';
+import { CreateUserComponent } from './Components/create-user/create-user.component';
+import { SetAdressComponent } from './Components/set-adress/set-adress.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'init', component: InitPageComponent, canActivate: [AuthGuard] },
-  { path: 'inicio', component: InicioComponent}
+  { path: 'create', component: CreateUserComponent},
+  { path: 'adress', component: SetAdressComponent}
 ];
 
 @NgModule({
